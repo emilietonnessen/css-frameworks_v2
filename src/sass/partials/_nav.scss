@@ -1,0 +1,72 @@
+.nav {
+    background: colors(nav, background);
+    color: colors(nav);
+    box-sizing: border-box;
+
+    @media screen and (max-width: 991px) {
+        padding: 0px;
+    }
+
+    &__logo{
+        color: colors(primary);
+        font-family: fonts(logo, italic, bold);
+        font-weight: 700;
+        font-style: italic;
+        font-size: 20px;
+
+        @media screen and (max-width: 991px) {
+            margin: 10px;
+        }
+    }
+
+    &__menu-icon{
+        @media screen and (max-width: 991px) {
+            margin: 10px;
+        }
+    }
+
+    &__link{
+        padding: 0px 15px;
+        box-sizing: border-box;
+        color: colors(nav);
+
+        @media screen and (max-width: 991px) {
+            padding: 20px !important;
+        }
+    }
+}
+
+.active{
+    background: $white;
+    border-radius: 3px;
+}
+
+.search{
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+
+    @media screen and (max-width: 991px) {
+        padding: 0px 20px 25px 20px;
+    }
+
+    &__btn{
+        background: colors(primary);
+        border: 1px solid colors(primary);
+        margin: 0;
+
+        border-radius: 0;
+        border-bottom-right-radius: 3px;
+        border-top-right-radius: 3px;
+    }
+}
+
+.navbar-light .navbar-brand {
+    color: colors(primary);
+}
+
+.mr-sm-2, .mx-sm-2 {
+    border-radius: 0;
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+    margin-right: -1px !important;
+}

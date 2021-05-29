@@ -1,0 +1,9 @@
+body, p, a{
+    font-family: fonts(primary, regular, basic);
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: fonts(logo, basic, bold);
+    color: colors(primary);
+    padding-top: 30px;
+}

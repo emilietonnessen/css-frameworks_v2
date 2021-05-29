@@ -1,0 +1,37 @@
+.container--accordion{
+    border: 0;
+    box-shadow: 0px 16px 22px rgba(0, 0, 0, 0.06);
+}
+
+.accordion{
+    &__header{
+        background: $white;
+        border-bottom: 1px solid colors(primary);
+
+        & .btn-link {
+            color: colors(primary) !important;
+            font-size: 19px;
+        }
+    }
+
+    &__img{
+        padding: 20px 0px;
+    }
+
+    &__icons{
+        display: flex;
+        flex-direction: row;
+        padding: 10px;
+        justify-content: center;
+        color: $black;
+
+        & p{
+            padding-right: 20px;
+            font-size: 16px;
+        }
+
+        & i:first-child{
+            padding-right: 10px;
+        }
+    }
+}

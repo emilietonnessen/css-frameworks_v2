@@ -1,0 +1,16 @@
+.pagination{
+    &__link{
+        border-radius: 10px;
+
+        & .page-link{
+            color: colors(primary);
+            border: 1px solid colors(primary);
+            padding: 10px 20px;
+        }
+    }
+
+    & .active .page-link{
+        background: colors(primary);
+        border: 1px solid colors(primary);
+    }
+}

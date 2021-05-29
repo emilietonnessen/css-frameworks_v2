@@ -1,0 +1,22 @@
+.form{
+    background: #EFEFEF;
+    padding: 20px;
+
+    &__label{
+        font-weight: 700;
+    }
+
+    &__checkbox .form-check  #formBasicCheckbox:checked{
+        background-color: colors(primary);
+    }
+    
+    &__btn{
+        width: 100%;
+        background: colors(secondary);
+        border: 0;
+
+        &:hover{
+            background: colors(secondary);
+        }
+    }
+}
