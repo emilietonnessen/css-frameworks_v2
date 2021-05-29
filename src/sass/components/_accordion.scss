@@ -1,11 +1,11 @@
 .container--accordion{
     border: 0;
-    box-shadow: 0px 16px 22px rgba(0, 0, 0, 0.06);
+    box-shadow: 0px 16px 22px rgba($color-black, 0.06);
 }
 
 .accordion{
     &__header{
-        background: $white;
+        background: $color-white;
         border-bottom: 1px solid colors(primary);
 
         & .btn-link {
@@ -23,7 +23,7 @@
         flex-direction: row;
         padding: 10px;
         justify-content: center;
-        color: $black;
+        color: $color-black;
 
         & p{
             padding-right: 20px;
