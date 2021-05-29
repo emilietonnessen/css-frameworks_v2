@@ -1,11 +1,41 @@
-@import "./partials/base";
-@import "./partials/layout";
-@import "./partials/typography";
-@import "./partials/nav";
-@import "./partials/footer";
-@import "./partials/tabs";
-@import "./partials/accordion";
-@import "./partials/articles";
-@import "./partials/paginations";
-@import "./partials/contactInfo";
-@import "./partials/contactForm";
+// Abstracts
+@import './abstracts/variables';
+@import './abstracts/mixin';
+@import './abstracts/utilities';
+
+
+
+// Vendors
+@import './vendors/bootstrap';
+
+
+
+// Base
+@import './base/reset';
+@import "./base/base";
+@import "./base/typography";
+
+
+
+// Layout
+@import "./layout/nav";
+@import "./layout/footer";
+@import "./layout/layout";
+
+
+
+// Components
+@import "./components/tabs";
+@import "./components/accordion";
+@import "./components/articles";
+@import "./components/pagination";
+@import "./components/contactInfo";
+@import "./components/contactForm";
+
+
+
+// Pages
+@import './pages/home';
+
+
+// Themes
