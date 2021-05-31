@@ -1,9 +1,32 @@
-body, p, a{
-    font-family: fonts(primary, regular, basic);
+body, 
+.paragraph, 
+.link, .link:link, .link:visited {
+    color: $color-body;
+    font-family: $font-family-body;
+    font-size: 1.6rem;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: none;
 }
 
-h1, h2, h3, h4, h5, h6{
-    font-family: fonts(logo, basic, bold);
+.paragraph {
+    &:not(:last-child) {
+        margin-bottom: 2rem;
+    }
+}
+
+.link {
+    transition: all .3s;
+
+    &:hover,
+    &:focus {
+        outline: none;
+        text-decoration: underline;
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $font-family-heading;
     color: colors(primary);
-    padding-top: 30px;
+    padding-top: 3rem;
 }
