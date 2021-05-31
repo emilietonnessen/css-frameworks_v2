@@ -1,0 +1,27 @@
+// Width/Height -------------------------------
+::-webkit-scrollbar {
+    width: .6rem;
+    height: .6rem;
+}
+
+
+
+// Track -------------------------------------
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+
+
+// Handle ------------------------------------
+::-webkit-scrollbar-thumb {
+    background:  $color-grey-light-2;
+    border-radius: 5px;
+}
+
+
+
+// Thumb -------------------------------------
+::-webkit-scrollbar-thumb:hover {
+    background:  darken($color-grey-light-2, 10);
+}

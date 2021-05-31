@@ -1,0 +1,94 @@
+// Button ---------------------------------------
+.btn {
+    font-size: 1.6rem;
+    padding: .5rem 1.5rem;
+}
+
+.btn-primary {
+    color: $color-white;
+    background-color: $color-primary;
+    border-color: $color-primary;
+
+    &:hover {
+        color: $color-white;
+        background-color: darken( $color-primary, 10);
+        border-color: $color-primary;
+    }
+
+    &:not(:disabled):not(.disabled):active,
+    &:focus,
+    &:not(:disabled):not(.disabled):active:focus  {
+        color: $color-white;
+        background-color: lighten( $color-primary, 10);
+        border-color: transparent;
+        box-shadow: unset;
+    }
+
+    &:focus-visible {
+        border-color: $color-black;
+        background-color: lighten( $color-primary, 10);
+        outline: none;
+    }
+}
+
+.btn-secondary {
+    color: $color-white;
+    background-color: $color-secondary;
+    border-color: transparent;
+
+    &:hover {
+        color: $color-white;
+        background-color: rgba( $color-secondary, .8);
+        border-color: transparent;
+    }
+
+    &:not(:disabled):not(.disabled):active,
+    &:focus,
+    &:not(:disabled):not(.disabled):active:focus {
+        color: $color-white;
+        background-color: lighten( $color-secondary, 10);
+        border-color: transparent;
+        box-shadow: unset;
+    }
+
+    &:focus-visible {
+        border-color: $color-black;
+        background-color: lighten( $color-secondary, 10);
+        outline: none;
+    }
+}
+
+
+
+
+// Navigation ---------------------------------------
+.navbar-brand {
+    align-self: center;
+    justify-self: center;
+}
+
+.nav-link,
+.nav-link:link,
+.nav-link:visited,
+.navbar-light,
+.navbar-nav {
+    
+    &:not(:last-child) {
+        margin-right: 1rem;
+    }
+}
+
+
+
+// Links ----------------------------------------------
+a {
+    color: $color-primary;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+p {
+    margin: 0;
+}

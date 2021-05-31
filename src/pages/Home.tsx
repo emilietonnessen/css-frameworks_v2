@@ -1,35 +1,11 @@
-import { Carousel, Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 import Accordion from "../components/UI/Accordion";
 import Tabs from "../components/UI/Tabs";
-import carouselOne from '../assets/carousel-1.jpg';
-import carouselTwo from '../assets/carousel-2.jpg';
-import carouselThree from '../assets/carousel-3.jpg';
+import Carousel from '../components/UI/Carousel';
 
 const Home: React.FC = () => (
     <>
-        <Carousel>
-            <Carousel.Item>
-                <img
-                    className="d-block w-100"
-                    src={carouselOne}
-                    alt="First slide"
-                />
-            </Carousel.Item>
-            <Carousel.Item>
-                <img
-                    className="d-block w-100"
-                    src={carouselTwo}
-                    alt="Second slide"
-                />
-            </Carousel.Item>
-            <Carousel.Item>
-                <img
-                    className="d-block w-100"
-                    src={carouselThree}
-                    alt="Third slide"
-                />
-            </Carousel.Item>
-        </Carousel>
+        <Carousel />
         <Container>
             <h1>We do YAY things</h1>
             <p>

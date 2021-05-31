@@ -3,7 +3,7 @@ import Pagination from '../components/UI/Pagination';
 import Articles from '../components/UI/Articles';
 
 const News: React.FC = () => (
-    <>
+    <div className="u-padding-top-bottom-lg">
         <Container className="container--pagination">
             <h1>News</h1>
         </Container>
@@ -16,7 +16,7 @@ const News: React.FC = () => (
         <Container className="container--pagination">
             <Pagination />
         </Container>
-    </>
+    </div>
 );
 
 export default News;

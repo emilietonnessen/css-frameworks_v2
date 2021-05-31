@@ -15,11 +15,11 @@
 @import './base/reset';
 @import "./base/base";
 @import "./base/typography";
-
+@import './base//scrollbar';
 
 
 // Layout
-@import "./layout/nav";
+@import "./layout/navigation";
 @import "./layout/footer";
 @import "./layout/layout";
 
@@ -31,7 +31,7 @@
 @import "./components/articles";
 @import "./components/pagination";
 @import "./components/contactInfo";
-@import "./components/contactForm";
+@import "./components/form";
 
 
 

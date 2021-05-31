@@ -4,10 +4,10 @@ import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 
 const schema = yup.object().shape({
-    name: yup.string().required("Please enter your name"),
-    email: yup.string().required("Please enter an email address").email("Please enter a valid email address"),
-    website: yup.string().required("Please enter your website"),
-    message: yup.string().required("Please enter your message").min(10, "The message must be at least 10 characters"),
+    name: yup.string().required("* Please enter your name"),
+    email: yup.string().required("* Please enter an email address").email("* Please enter a valid email address"),
+    website: yup.string().required("* Please enter your website"),
+    message: yup.string().required("* Please enter your message").min(10, "* The message must be at least 10 characters"),
 });
 
 const ContactForm: React.FC = () => {
@@ -32,7 +32,7 @@ const ContactForm: React.FC = () => {
         <Form className="form" onSubmit={handleSubmit(onSubmit)}>
 
             {/* Name */}
-            <Form.Group>
+            <Form.Group className="form__group">
                 <Form.Label>Name</Form.Label>
                 <Form.Control placeholder="First name" {...register("name")} />
                 {errors.name && <span className="form__group--error">{errors.name.message}</span>}
@@ -40,7 +40,7 @@ const ContactForm: React.FC = () => {
 
 
             {/* Email */}
-            <Form.Group  controlId="exampleForm.ControlInput1">
+            <Form.Group className="form__group"  controlId="exampleForm.ControlInput1">
                 <Form.Label>Email</Form.Label>
                 <Form.Control type="email" placeholder="name@example.com" {...register("email")}/>
                 {errors.email && <span className="form__group--error">{errors.email.message}</span>}
@@ -48,7 +48,7 @@ const ContactForm: React.FC = () => {
 
 
             {/* Website */}
-            <Form.Group>
+            <Form.Group className="form__group">
                 <Form.Label>Website</Form.Label>
                 <InputGroup className="mb-2">
                     <InputGroup.Prepend>
@@ -61,7 +61,7 @@ const ContactForm: React.FC = () => {
 
 
             {/* Message */}
-            <Form.Group  controlId="exampleForm.ControlTextarea1">
+            <Form.Group className="form__group"  controlId="exampleForm.ControlTextarea1">
                 <Form.Label>Message</Form.Label>
                 <Form.Control as="textarea" rows={3} {...register("message")}/>
                 {errors.message && <span className="form__group--error">{errors.message.message}</span>}
@@ -69,13 +69,13 @@ const ContactForm: React.FC = () => {
 
 
             {/* Checkbox */}
-            <Form.Group className="mb-3" controlId="formBasicCheckbox">
+            <Form.Group className="form__group mb-3" controlId="formBasicCheckbox">
                 <Form.Check type="checkbox" label="Allow us to sell your personal details to whomever we want" />
             </Form.Group>
 
 
             {/* Submit Button */}
-            <Button variant="primary" type="submit">
+            <Button variant="secondary" type="submit">
                 Submit
             </Button>
         </Form>

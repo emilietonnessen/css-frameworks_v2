@@ -12,7 +12,7 @@ $colors: (
     ),
     nav: (
         base: $color-nav,
-        background: $color-background,
+        background: $color-nav-background,
         light: lighten($color-nav, $color-lighten),
         dark: darken($color-nav, $color-darken),
     ),

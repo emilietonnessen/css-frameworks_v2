@@ -5,7 +5,7 @@ import ContactInfo from '../components/ContactInfo';
 
 
 const Contact: React.FC = () => (
-    <Container>
+    <Container className="u-padding-top-bottom-lg">
         <Row>
             <Col xs={{ span: 12, order: 2 }} md={{ span:12, order: 1}}>
                 <h1>Submit your details</h1>
