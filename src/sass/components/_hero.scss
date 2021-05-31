@@ -1,0 +1,15 @@
+.hero {
+    margin: 3rem 0;
+
+    &__headline {
+        font-size: 4rem;
+    }
+
+    &__text {
+        margin-top: 1rem;
+    }
+
+    &__button {
+        margin-top: 3rem;
+    }
+}
