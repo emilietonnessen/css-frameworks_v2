@@ -1,5 +1,6 @@
 import { Tab, Tabs, Card } from 'react-bootstrap';
-import TabImage from '../assets/tab-image.png';
+
+import TabImage from '../../assets/tab-image.png';
 
 const ContentTabs: React.FC = () => (
     <Tabs defaultActiveKey="first">

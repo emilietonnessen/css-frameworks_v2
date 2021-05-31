@@ -1,5 +1,6 @@
 import { Accordion, Card, Button } from 'react-bootstrap';
-import TabImage from '../assets/tab-image.png';
+
+import TabImage from '../../assets/tab-image.png';
 
 const ContentAccordion: React.FC = () => (  
     <Accordion defaultActiveKey="0" className="container--accordion">

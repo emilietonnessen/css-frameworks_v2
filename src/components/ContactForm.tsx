@@ -1,4 +1,4 @@
-import {Form, Button, FormControl, InputGroup} from 'react-bootstrap';
+import { Form, Button, FormControl, InputGroup } from 'react-bootstrap';
 
 const ContactForm: React.FC = () => {
     return (

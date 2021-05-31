@@ -1,6 +1,8 @@
+import { Container, Row, Col } from 'react-bootstrap';
+
 import ContactForm from '../components/ContactForm';
 import ContactInfo from '../components/ContactInfo';
-import { Container, Row, Col } from 'react-bootstrap';
+
 
 const Contact: React.FC = () => (
     <Container>
@@ -18,7 +20,6 @@ const Contact: React.FC = () => (
             </Col>
         </Row>
     </Container>
-        
 );
 
 export default Contact;
