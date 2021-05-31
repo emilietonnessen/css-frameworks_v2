@@ -1,12 +1,12 @@
 import { Card, Button, Row, Col } from 'react-bootstrap';
-import NewsImage1 from '../images/news-1.png';
-import NewsImage2 from '../images/news-2.png';
-import NewsImage3 from '../images/news-3.png';
-import NewsImage4 from '../images/news-4.png';
-import NewsImage5 from '../images/news-5.png';
-import NewsImage6 from '../images/news-6.png';
-import NewsImage7 from '../images/news-7.png';
-import NewsImage8 from '../images/news-8.png';
+import NewsImage1 from '../../../assets/news-1.png';
+import NewsImage2 from '../../../assets/news-2.png';
+import NewsImage3 from '../../../assets/news-3.png';
+import NewsImage4 from '../../../assets/news-4.png';
+import NewsImage5 from '../../../assets/news-5.png';
+import NewsImage6 from '../../../assets/news-6.png';
+import NewsImage7 from '../../../assets/news-7.png';
+import NewsImage8 from '../../../assets/news-8.png';
 
 const Articles: React.FC = () => (
     <Row>

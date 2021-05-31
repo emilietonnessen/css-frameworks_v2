@@ -1,9 +1,9 @@
 import { Carousel, Container, Row, Col } from 'react-bootstrap';
 import ContentAccordion from "./content/ContentAccordion";
 import ContentTabs from "./content/ContentTabs";
-import logoOne from './images/carousel-1.jpg';
-import logoTwo from './images/carousel-2.jpg';
-import logoThree from './images/carousel-3.jpg';
+import carouselOne from '../../assets/carousel-1.jpg';
+import carouselTwo from '../../assets/carousel-2.jpg';
+import carouselThree from '../../assets/carousel-3.jpg';
 
 const Home: React.FC = () => (
     <>
@@ -11,21 +11,21 @@ const Home: React.FC = () => (
             <Carousel.Item>
                 <img
                     className="d-block w-100"
-                    src={logoOne}
+                    src={carouselOne}
                     alt="First slide"
                 />
             </Carousel.Item>
             <Carousel.Item>
                 <img
                     className="d-block w-100"
-                    src={logoTwo}
+                    src={carouselTwo}
                     alt="Second slide"
                 />
             </Carousel.Item>
             <Carousel.Item>
                 <img
                     className="d-block w-100"
-                    src={logoThree}
+                    src={carouselThree}
                     alt="Third slide"
                 />
             </Carousel.Item>
@@ -49,7 +49,6 @@ const Home: React.FC = () => (
             </Row>
         </Container>
     </>
-)
+);
 
-
-export default Home
+export default Home;
