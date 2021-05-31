@@ -1,5 +1,5 @@
-import ContactForm from './content/ContactForm';
-import ContactInfo from './content/ContactInfo';
+import ContactForm from '../components/ContactForm';
+import ContactInfo from '../components/ContactInfo';
 import { Container, Row, Col } from 'react-bootstrap';
 
 const Contact: React.FC = () => (

@@ -1,9 +1,9 @@
 import { Carousel, Container, Row, Col } from 'react-bootstrap';
-import ContentAccordion from "./content/ContentAccordion";
-import ContentTabs from "./content/ContentTabs";
-import carouselOne from '../../assets/carousel-1.jpg';
-import carouselTwo from '../../assets/carousel-2.jpg';
-import carouselThree from '../../assets/carousel-3.jpg';
+import Accordion from "../components/UI/Accordion";
+import Tabs from "../components/UI/Tabs";
+import carouselOne from '../assets/carousel-1.jpg';
+import carouselTwo from '../assets/carousel-2.jpg';
+import carouselThree from '../assets/carousel-3.jpg';
 
 const Home: React.FC = () => (
     <>
@@ -40,10 +40,10 @@ const Home: React.FC = () => (
             <Row>  
                 <Col>
                     <div className="d-block d-md-none">
-                        <ContentAccordion />
+                        <Accordion />
                     </div>
                         <div className="d-none d-md-block">
-                        <ContentTabs />
+                        <Tabs />
                     </div>
                 </Col>
             </Row>

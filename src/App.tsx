@@ -1,8 +1,8 @@
 import "./sass/style.scss";
 import { BrowserRouter as Router, Switch, Route, NavLink } from "react-router-dom";
-import Home from './components/home/Home';
-import News from './components/news/News';
-import Contact from './components/contact/Contact';
+import Home from './pages/Home';
+import News from './pages/News';
+import Contact from './pages/Contact';
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Form from "react-bootstrap/Form";

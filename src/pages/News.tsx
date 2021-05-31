@@ -1,6 +1,6 @@
 import { Container } from 'react-bootstrap';
-import Pagination from './content/Pagination';
-import Articles from './content/Articles';
+import Pagination from '../components/UI/Pagination';
+import Articles from '../components/UI/Articles';
 
 const News: React.FC = () => (
     <>
