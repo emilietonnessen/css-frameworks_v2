@@ -26,7 +26,7 @@ const ContactForm: React.FC = () => {
 
 
     // console logs
-    console.error("[errors]", errors);
+    //console.error("[errors]", errors);
 
     return (
         <Form className="form" onSubmit={handleSubmit(onSubmit)}>
@@ -34,7 +34,7 @@ const ContactForm: React.FC = () => {
             {/* Name */}
             <Form.Group className="form__group">
                 <Form.Label>Name</Form.Label>
-                <Form.Control placeholder="First name" {...register("name")} />
+                <Form.Control placeholder="First name" {...register("name")} className="form__input" />
                 {errors.name && <span className="form__group--error">{errors.name.message}</span>}
             </Form.Group>
 
@@ -42,7 +42,7 @@ const ContactForm: React.FC = () => {
             {/* Email */}
             <Form.Group className="form__group"  controlId="exampleForm.ControlInput1">
                 <Form.Label>Email</Form.Label>
-                <Form.Control type="email" placeholder="name@example.com" {...register("email")}/>
+                <Form.Control type="email" placeholder="name@example.com" {...register("email")} className="form__input"/>
                 {errors.email && <span className="form__group--error">{errors.email.message}</span>}
             </Form.Group>
 
@@ -52,9 +52,9 @@ const ContactForm: React.FC = () => {
                 <Form.Label>Website</Form.Label>
                 <InputGroup className="mb-2">
                     <InputGroup.Prepend>
-                        <InputGroup.Text>https://</InputGroup.Text>
+                        <InputGroup.Text className="form__icon">https://</InputGroup.Text>
                     </InputGroup.Prepend>
-                    <FormControl id="inlineFormInputGroup" placeholder="www.example.com" {...register("website")}/>
+                    <FormControl id="inlineFormInputGroup" placeholder="www.example.com" {...register("website")} className="form__input"/>
                 </InputGroup>
                 {errors.website && <span className="form__group--error">{errors.website.message}</span>}
             </Form.Group>
@@ -63,19 +63,19 @@ const ContactForm: React.FC = () => {
             {/* Message */}
             <Form.Group className="form__group"  controlId="exampleForm.ControlTextarea1">
                 <Form.Label>Message</Form.Label>
-                <Form.Control as="textarea" rows={3} {...register("message")}/>
+                <Form.Control as="textarea" rows={3} {...register("message")} className="form__textarea"/>
                 {errors.message && <span className="form__group--error">{errors.message.message}</span>}
             </Form.Group>
 
 
             {/* Checkbox */}
-            <Form.Group className="form__group mb-3" controlId="formBasicCheckbox">
-                <Form.Check type="checkbox" label="Allow us to sell your personal details to whomever we want" />
+            <Form.Group className="form__group mb-3" controlId="checkbox">
+                <Form.Check id="checkbox" type="checkbox" label="Allow us to sell your personal details to whomever we want" />
             </Form.Group>
 
 
             {/* Submit Button */}
-            <Button variant="secondary" type="submit">
+            <Button variant="secondary" type="submit" className="form__button">
                 Submit
             </Button>
         </Form>

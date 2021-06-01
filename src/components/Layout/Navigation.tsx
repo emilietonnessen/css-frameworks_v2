@@ -35,7 +35,7 @@ const Navigation: React.FC = () => (
 
                 {/* Search */}
                 <Form inline>
-                    <FormControl type="text" placeholder="Search" className="mr-sm-2" />
+                    <FormControl type="text" placeholder="Search" className="mr-sm-2 form__input form__input--grey" />
                     <Button variant="primary">Go</Button>
                 </Form>
 

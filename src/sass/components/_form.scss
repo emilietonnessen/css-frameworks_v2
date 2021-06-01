@@ -22,20 +22,44 @@
     } 
 
 
-    // Checkbox
+
+    // Icon -------------------------------------
+    &__icon {
+        font-size: 1.2rem;
+        background-color: colors(primary);
+        color: $color-white;
+    }
+
+
+
+    // Input ------------------------------------
+    &__input {
+        @include formElements;
+
+        &--grey {
+            background-color: $color-background;
+            height: 3.6rem
+        }
+    }
+
+
+
+    // Textarea ---------------------------------
+    &__textarea {
+        @include formElements;
+    }
+
+
+
+    // Checkbox ---------------------------------
     &__checkbox .form-check  #formBasicCheckbox:checked{
         background-color: colors(primary);
     }
     
 
-    // Submit Button
-    &__btn {
-        width: 100%;
-        background: colors(secondary);
-        border: 0;
 
-        &:hover{
-            background: colors(secondary);
-        }
+    // Submit Button ---------------------------
+    &__button {
+        margin-top: 2rem;
     }
 }

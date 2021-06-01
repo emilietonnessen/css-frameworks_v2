@@ -29,3 +29,17 @@ h1, h2, h3, h4, h5, h6 {
     font-family: $font-family-heading;
     color: colors(primary);
 }
+
+
+.headline {
+    font-family: $font-family-heading;
+    font-weight: 600;
+
+    &--primary {
+        color: colors(primary);
+        font-size: 4rem;
+        border-bottom: 1px solid colors(primary);
+        padding: .5rem 2rem;
+        margin-bottom: 2rem;
+    }
+}

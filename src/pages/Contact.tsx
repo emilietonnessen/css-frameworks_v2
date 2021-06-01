@@ -8,10 +8,10 @@ const Contact: React.FC = () => (
     <Container className="u-padding-top-bottom-lg">
         <Row>
             <Col xs={{ span: 12, order: 2 }} md={{ span:12, order: 1}}>
-                <h1>Submit your details</h1>
+                <h1 className="headline headline--primary">Submit your details</h1>
             </Col>
 
-            <Col className="container--contactInfo" xs={{ span: 12, order: 1 }} md={{ span:6, order: 3}}>
+            <Col xs={{ span: 12, order: 1 }} md={{ span:6, order: 3}}>
                 <ContactInfo />
             </Col>
 

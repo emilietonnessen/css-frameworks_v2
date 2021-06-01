@@ -1,0 +1,11 @@
+@mixin formElements {
+    padding: 1rem;
+    font-size: 1.4rem;
+    outline: none;
+    border-bottom: 1px solid transparent;
+    border-radius: 0;
+
+    &::placeholder {
+        font-size: 1.4rem;
+    }
+}

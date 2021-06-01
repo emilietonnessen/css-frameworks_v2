@@ -1,15 +1,25 @@
-.contactInfo{
+.contact-info{
+    padding: 2rem;
 
     @media screen and (max-width: 991px){
         margin-top: 30px;
     }
 
     &__item{
-        margin-bottom: 15px;
+        
+        &:not(:last-child) {
+            margin-bottom: 15px;
+        }
     }
 
     &__icon{
         font-size: 30px;
+        color: colors(secondary);
+        transition: all .3s;
+
+        &:hover {
+            color: colors(primary);
+        }
     }
 
     &__text{
