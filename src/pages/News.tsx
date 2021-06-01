@@ -5,7 +5,7 @@ import Articles from '../components/UI/Articles';
 const News: React.FC = () => (
     <div className="u-padding-top-bottom-lg">
         <Container className="container--pagination">
-            <h1>News</h1>
+            <h1 className="headline headline--primary">News</h1>
         </Container>
         <Container>
             <Pagination />
